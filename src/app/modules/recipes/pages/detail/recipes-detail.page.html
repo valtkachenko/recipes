@@ -1,0 +1,35 @@
+<div class="content" fxLayout="row" fxFlexAlign="center center">
+  <div fxFlex="100%">
+    <mat-card *ngIf="item">
+      <mat-card-header>
+        <div mat-card-avatar class="back-button" (click)="back()">
+          <mat-icon>arrow_back</mat-icon>
+        </div>
+        <mat-card-title>#{{item.id}}</mat-card-title>
+      </mat-card-header>
+
+      <img mat-card-image [src]="item.image" alt="{{item.title}}">
+
+      <mat-card-content>
+        <h1>
+          {{item.title}}
+        </h1>
+
+        <h2>Summary:</h2>
+        <p [innerHtml]="item.summary"></p>
+
+        <h2>Instructions:</h2>
+        <p [innerHtml]="item.instructions"></p>
+
+        <h3>Ingredients:</h3>
+        <mat-list>
+          <mat-list-item *ngFor="let ingredient of item.extendedIngredients">
+            <img mat-list-avatar [src]="imageUrl+ingredient.image" [alt]="ingredient.name">
+            <div mat-line>{{ingredient.name}}</div>
+            <div mat-line>amount: {{ingredient.amount}} </div>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

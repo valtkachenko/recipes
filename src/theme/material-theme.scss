@@ -1,0 +1,25 @@
+//@import 'variables';
+////@import 'mixins';
+//
+//@include mat-core();
+//
+//$primary: mat-palette($custom-red);
+//$accent: mat-palette($custom-red, A200, A100, A400);
+//$warn: mat-palette($custom-red);
+//$theme: mat-light-theme($primary, $accent, $warn);
+//@include angular-material-theme($theme);
+////@include mix-app-theme($theme);
+//
+//// Blue theme
+////.blue-theme {
+////  $blue-primary: mat-palette($custom-blue);
+////  $blue-accent: mat-palette($custom-blue, A400, A100, A700);
+////  $blue-warn: mat-palette($custom-blue);
+////  $blue-theme: mat-light-theme($blue-primary, $blue-accent, $blue-warn);
+////  @include angular-material-theme($blue-theme);
+//  //@include mix-app-theme($blue-theme);
+////}
+//
+//.mat-drawer {
+//  width: 100%;
+//}
